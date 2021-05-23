@@ -1,0 +1,111 @@
+/* CSS Document */
+
+#primary_logo {
+  display: block;
+  padding: 0 30px;
+  float: left;
+  font-size: 20px;
+  height:100px;
+}
+
+#primary_logo img {
+  padding-right: 15px;
+  padding-top: 10px;
+  height:90px;
+}
+
+footer {
+  height: 30px;
+  background-color: #5C5F58;
+  text-align: center;
+  font-size: 14px;
+  bottom:0;
+  width:100%;
+}
+
+footer > strong {
+  font-size: 20px;
+  color: red;
+}
+
+nav {
+  margin: 10;
+  padding: 10;
+  background-color: #5C5F58;
+}
+
+nav ul {
+  float: right;
+  padding: 10;
+  margin: 10;
+  list-style: none;
+  position: relative;
+}
+
+nav ul li {
+  margin: 10;
+  float: left;
+  position: relative;
+}
+
+#btn-group {
+	position: absolute;
+	
+	width:300px;
+}
+
+button {
+	min-width:200px;
+	left: 35%;		
+}
+
+.dropdown-menu {
+    width: 300px;
+    min-height:100px;
+}
+
+#main_info {
+	padding: 75px 50px 50px 50px;	
+	text-align: center;
+	font-size:18px;
+}
+
+#industry_info, #trend_info, #asset_info {
+	padding: 75px 50px 50px 50px;	
+	text-align: left;
+	font-size:18px;
+}
+
+#industry_image, #threat_image {
+	display:flex;
+ 	align-items:center;
+ 	justify-content:center;
+ 	margin-bottom:50px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+
+
+.card {
+	margin: 50px; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}
+
+#about {
+	text-align: center;]
+	padding: 75px 50px 50px 50px;
+	margin:75px 50px 50px 50px;
+}
+
+#diamond_model {
+	padding: 75px 50px 50px 50px;	
+	text-align: center;
+	font-size:18px;
+}
+
+
