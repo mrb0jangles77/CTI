@@ -32,39 +32,65 @@
 <body>
 <div id="body_container">
     <nav>
-    	<div class="col-sm-12 col-xs-12" id="primary_logo"><img src="images\primary_logo.png">Internet of Things(IoT) CTI</div>
-    	<!-- Example single danger button -->
-        <div class="btn-group col-6">
-        
-            <button type="button" class="btn btn-warning btn-block" aria-expanded="false" onclick=" relocate_home()">
-            Home
-            </button>
-            <!-- end of the button -->
+		<img id="primary_logo" src="images\primary_logo.png"><b>Internet of Things(IoT) CTI</b>
+		
+		<div class="btn-toolbar" role="toolbar" aria-label="Button group toolbar">
+		
+    		<div class="btn-group" role="group" aria-label="Button group 1">
+            	
+            	<button type="button" class="btn btn-warning btn-block" aria-expanded="false" onclick=" relocate_home()">
+                Home
+                </button>
+                <!-- end of the button -->
+                
+                <button type="button" class="btn btn-warning dropdown-toggle btn-block" data-bs-toggle="dropdown" aria-expanded="false">
+                Industry Background
+                </button>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="industry_background.php">Background of industry</a></li>
+                <li><a class="dropdown-item" href="threat_trends.php">Threat trends</a></li>
+                </ul>
+    			<!-- end of the dropdown -->
+    			
+    			<button type="button" class="btn btn-warning dropdown-toggle btn-block" data-bs-toggle="dropdown" aria-expanded="false">
+                Threat Modelling
+                </button>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="critical_asset.php">Critical asset identification</a></li>
+                <li><a class="dropdown-item" href="diamond.php">Diamond models</a></li>
+                <li><a class="dropdown-item" href="intel_buyin.php">Intelligence buy-in</a></li>
+                </ul>
+              	<!-- end of the dropdown -->
+            	
+    		</div>
+    		
+    		<div class="btn-group" role="group" aria-label="Button group 2">
+    			<button type="button" class="btn btn-warning dropdown-toggle btn-block" data-bs-toggle="dropdown" aria-expanded="false">
+                Data Summary
+                </button>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="data_summary.php">Data summary</a></li>
+                </ul>
+              	<!-- end of the dropdown -->
+              	
+              	<button type="button" class="btn btn-warning dropdown-toggle btn-block" data-bs-toggle="dropdown" aria-expanded="false">
+                Data Examples
+                </button>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="data_shodan.php">Shodan.io data example</a></li>
+                <li><a class="dropdown-item" href="data_abuse.php">Abuse.ch data example</a></li>
+                </ul>
+              	<!-- end of the dropdown -->
             
-            <button type="button" class="btn btn-warning dropdown-toggle btn-block" data-bs-toggle="dropdown" aria-expanded="false">
-            Industry Background
-            </button>
-            <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="industry_background.php">Background of industry</a></li>
-            <li><a class="dropdown-item" href="threat_trends.php">Threat trends</a></li>
-            </ul>
-			<!-- end of the dropdown -->
-			
-			<button type="button" class="btn btn-warning dropdown-toggle btn-block" data-bs-toggle="dropdown" aria-expanded="false">
-            Threat Modelling
-            </button>
-            <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="critical_asset.php">Critical asset identification</a></li>
-            <li><a class="dropdown-item" href="diamond.php">Diamond models</a></li>
-            <li><a class="dropdown-item" href="intel_buyin.php">Intelligence buy-in here</a></li>
-            </ul>
-          	<!-- end of the dropdown -->
-        
-			<button type="button" class="btn btn-warning btn-block" aria-expanded="false" onclick=" relocate_about()">
-            About
-            </button>           
-        </div> <!-- end of the button group-->                
-    </nav>
+    			<button type="button" class="btn btn-warning btn-block" aria-expanded="false" onclick=" relocate_about()">
+                About
+                </button>
+    		</div>
+    		
+    		
+    	</div>
+	
+	</nav>
     
     <div id="main_content">
     
@@ -79,26 +105,28 @@
               <div class="card-header">
                 <ul class="nav nav-tabs card-header-tabs">
                   <li class="nav-item">
-                    <a class="nav-link active" href="#">Milestone 1</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Milestone 2</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Milestone 3</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Milestone 4</a>
+                    <a class="nav-link active" href="#">Milestones</a>
                   </li>
                 </ul>
               </div>
-              <div class="card-body">
+              <div id="card-body">
                 <h5 class="card-title">Milestone 1</h5>
                 <p class="card-text">
                       Discover key threat trends for an industry<br>
                       Identify critical assets for organizations within industry<br>
                       Develop threat modeling scenarios<br>
                       Post finding on an initial prototype website<br>
+                </p>
+                <p class="card-text"><small class="text-muted">Updated 5/21/21</small></p>
+              </div>
+              <br>
+              <div id="card-body">
+                <h5 class="card-title">Milestone 2</h5>
+                <p class="card-text">
+                      Milestone 1 feedback<br>
+                      Identify intelligence feeds & data sources<br>
+                      Develop scripts for acquisition of data & summarize<br>
+                      Update prototype website to display data samples<br>
                 </p>
                 <p class="card-text"><small class="text-muted">Updated 5/21/21</small></p>
               </div>

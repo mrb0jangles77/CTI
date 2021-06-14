@@ -91,44 +91,95 @@
     	</div>
 	
 	</nav>
-    
-    <div id="main_content">
-    
-    	<div id="trend_info">
-        	<h1>Threat Trends</h1>
-        	<div id="threat_image">
-        		<img src="images/iot_2.png" width="600" height="500">
-        		<img src="images/iot_3.png" width="600" height="500">
-        	</div>
-        	
-        	<ul>
-        		<li>83% of medical imaging devices are running on unsupported operating systems.</li>
-        		<ul>
-        			<li>This reflects a 56% jump from 2018 due to the Windows 7 operating system reaching its 
-        			end of life, leaving hospital organizations vulnerable to attacks that can disrupt 
-        			care or expose sensitive medical information</li>
-        			<li>There is an inherent risk for organizations using IoT devices with the operating systems 
-        			shown in the figure above.</li>
-        			       			
-        		</ul>
-        		<br>
-        		<li>98% of all IoT device traffic is unencrypted.</li>
-        		<ul>
-        			<li>This exposes personal and confidential data on the network.</li>
-        			<li>Attackers have the ability to listen to unencrypted network traffic.</li>
-        			<li>Attacker can collect personal or confidential information and 
-        			exploit that data for profit on the dark web</li>
-        		</ul>
-        		<br>
-        		<li>57% of IoT devices are vulnerable to medium or high-severity attacks</li>
-        		<ul>
-        			<li>Thus making IoT the low-hanging fruit for attackers</li>
-        		</ul>
-        	</ul>
-        </div> <!-- end of the threat trends --> 
-     </div> <!-- end of the content -->
-</div>
+	
+	<div id="main_content">
+    	<p><h1>Data Summary</h1></p>
+    	
+    	<div class="container">            
+          <table class="table table-bordered">
+            <tbody>
+              <tr>
+                <td rowspan='5'><img id='shodan' src="images\shodan.jpg" width="400" height="400"></td>
+                <td><b>About</b></td>
+                <td>Shodan is a search engine for IoT devices</td>
+              </tr>
+              <tr>
+                <td><b>Advantage</b></td>
+                <td><ul>
+                      <li>Known as 'The search engine for hackers'</li>
+                      <li>Ability find ANY device and report any vulnerabilities</li>
+                      <li>This search engine is also useful to security personnel to help protect networks</li>
+                    </ul>
+                </td>
+              </tr>
+              <tr>
+                <td><b>Data Collected</b></td>
+                <td><ul>
+                      <li>Results related to the IoT</li>
+                      <li>Fields such as IP Address, Port, Location, Organization, City, Protocol, etc.</li>
+                    </ul></td>
+              </tr>
+              <tr>
+                <td><b>Collected Strategy</b></td>
+                <td>Sign up and profile creation on the shodan platform to acquire an API key.
+                Using the API key, created a python script to make search engine queries. Normalization of 
+                query results to add data to database.</td>
+              </tr>
+              <tr>
+                <td><b>Justification</b></td>
+                <td>Using this data, security professionals can monitor devices vulnerable to network threats while gaining
+                an external view of the IoT landscape</td>
+              </tr>
+            </tbody>
+          </table>
+		</div>
 
+		<div class="container">            
+          <table class="table table-bordered">
+            <tbody>
+              <tr>
+                <td rowspan='5'><img id='abuse' src="images\abuse.jpg" width="400" height="400"></td>
+                <td><b>About</b></td>
+                <td>Abuse, developed by Bern University of Applied Sciences (BFH) in Switzerland, 
+                identifies and tracks malware & botnets </td>
+              </tr>
+              <tr>
+                <td><b>Advantage</b></td>
+                <td>Various thread feed offerings<br>
+                	<ul>
+                      <li>Suricata rule set</li>
+                      <li>C & C Servers</li>
+                      <li>Botnet C2 IP Blacklist</li>
+                      <li>Many more</li>
+                    </ul>
+                </td>
+              </tr>
+              <tr>
+                <td><b>Data Collected</b></td>
+                <td>
+                	<ul>
+                      <li>SSL fingerprint</li>
+                      <li>Date last seen</li>
+                      <li>Malware type</li>
+                    </ul></td>
+              </tr>
+              <tr>
+                <td><b>Collected Strategy</b></td>
+                <td>Python Script making HTTP GET request to public URL hosting csv data that is updated every 
+                5 minutes. Parse month, day and year from timestamp column & normalization of data to push to database.</td>
+              </tr>
+              <tr>
+                <td><b>Justification</b></td>
+                <td>Intelligence feed of SSL fingerprints can be used to create actionable items like indicators 
+                of compromise (IOCs)</td>
+              </tr>
+            </tbody>
+          </table>
+		</div>
+		 	
+    </div>
+	
+</div>
 <script>
     function relocate_home()
     {
@@ -140,9 +191,10 @@
          location.href = "about.php";
     }
 </script>
-
-
 </body>
+
+
+
 
 <footer>
 	<strong>This site is for academic purposes only.</strong> &copy; Steven Green

@@ -32,39 +32,65 @@
 <body>
 <div id="body_container">
     <nav>
-    	<div class="col-sm-12 col-xs-12" id="primary_logo"><img src="images\primary_logo.png">Internet of Things(IoT) CTI</div>
-    	<!-- Example single danger button -->
-        <div class="btn-group col-6">
-        
-            <button type="button" class="btn btn-warning btn-block" aria-expanded="false" onclick=" relocate_home()">
-            Home
-            </button>
-            <!-- end of the button -->
+		<img id="primary_logo" src="images\primary_logo.png"><b>Internet of Things(IoT) CTI</b>
+		
+		<div class="btn-toolbar" role="toolbar" aria-label="Button group toolbar">
+		
+    		<div class="btn-group" role="group" aria-label="Button group 1">
+            	
+            	<button type="button" class="btn btn-warning btn-block" aria-expanded="false" onclick=" relocate_home()">
+                Home
+                </button>
+                <!-- end of the button -->
+                
+                <button type="button" class="btn btn-warning dropdown-toggle btn-block" data-bs-toggle="dropdown" aria-expanded="false">
+                Industry Background
+                </button>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="industry_background.php">Background of industry</a></li>
+                <li><a class="dropdown-item" href="threat_trends.php">Threat trends</a></li>
+                </ul>
+    			<!-- end of the dropdown -->
+    			
+    			<button type="button" class="btn btn-warning dropdown-toggle btn-block" data-bs-toggle="dropdown" aria-expanded="false">
+                Threat Modelling
+                </button>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="critical_asset.php">Critical asset identification</a></li>
+                <li><a class="dropdown-item" href="diamond.php">Diamond models</a></li>
+                <li><a class="dropdown-item" href="intel_buyin.php">Intelligence buy-in</a></li>
+                </ul>
+              	<!-- end of the dropdown -->
+            	
+    		</div>
+    		
+    		<div class="btn-group" role="group" aria-label="Button group 2">
+    			<button type="button" class="btn btn-warning dropdown-toggle btn-block" data-bs-toggle="dropdown" aria-expanded="false">
+                Data Summary
+                </button>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="data_summary.php">Data summary</a></li>
+                </ul>
+              	<!-- end of the dropdown -->
+              	
+              	<button type="button" class="btn btn-warning dropdown-toggle btn-block" data-bs-toggle="dropdown" aria-expanded="false">
+                Data Examples
+                </button>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="data_shodan.php">Shodan.io data example</a></li>
+                <li><a class="dropdown-item" href="data_abuse.php">Abuse.ch data example</a></li>
+                </ul>
+              	<!-- end of the dropdown -->
             
-            <button type="button" class="btn btn-warning dropdown-toggle btn-block" data-bs-toggle="dropdown" aria-expanded="false">
-            Industry Background
-            </button>
-            <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="industry_background.php">Background of industry</a></li>
-            <li><a class="dropdown-item" href="threat_trends.php">Threat trends</a></li>
-            </ul>
-			<!-- end of the dropdown -->
-			
-			<button type="button" class="btn btn-warning dropdown-toggle btn-block" data-bs-toggle="dropdown" aria-expanded="false">
-            Threat Modelling
-            </button>
-            <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="critical_asset.php">Critical asset identification</a></li>
-            <li><a class="dropdown-item" href="diamond.php">Diamond models</a></li>
-            <li><a class="dropdown-item" href="intel_buyin.php">Intelligence buy-in here</a></li>
-            </ul>
-          	<!-- end of the dropdown -->
-        
-			<button type="button" class="btn btn-warning btn-block" aria-expanded="false" onclick=" relocate_about()">
-            About
-            </button>   
-            </div> <!-- end of the button group -->         
-    </nav>
+    			<button type="button" class="btn btn-warning btn-block" aria-expanded="false" onclick=" relocate_about()">
+                About
+                </button>
+    		</div>
+    		
+    		
+    	</div>
+	
+	</nav>
     
     <div id="main_content">
     

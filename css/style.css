@@ -29,15 +29,16 @@ footer > strong {
 }
 
 nav {
-  margin: 10;
-  padding: 10;
+  margin: 10px;
+  padding-top: 10px;
   background-color: #5C5F58;
+  float:left;
 }
 
 nav ul {
   float: right;
-  padding: 10;
-  margin: 10;
+  padding: 10px;
+  margin: 10px;
   list-style: none;
   position: relative;
 }
@@ -48,15 +49,12 @@ nav ul li {
   position: relative;
 }
 
-#btn-group {
-	position: absolute;
+.btn-toolbar {
 	
-	width:300px;
-}
+	}
 
 button {
-	min-width:200px;
-	left: 35%;		
+	
 }
 
 .dropdown-menu {
@@ -97,7 +95,7 @@ html, body {
 }
 
 #about {
-	text-align: center;]
+	text-align: center;
 	padding: 75px 50px 50px 50px;
 	margin:75px 50px 50px 50px;
 }
