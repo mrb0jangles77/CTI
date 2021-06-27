@@ -31,7 +31,7 @@
 
 <body>
 <div id="body_container">
-    <nav>
+        <nav>
 		<img id="primary_logo" src="images\primary_logo.png"><b>Internet of Things(IoT) CTI</b>
 		
 		<div class="btn-toolbar" role="toolbar" aria-label="Button group toolbar">
@@ -81,6 +81,15 @@
                 <li><a class="dropdown-item" href="data_abuse.php">Abuse.ch data example</a></li>
                 </ul>
               	<!-- end of the dropdown -->
+              	
+              	<button type="button" class="btn btn-warning dropdown-toggle btn-block" data-bs-toggle="dropdown" aria-expanded="false">
+                Analytics
+                </button>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="approaches.php">Approaches</a></li>
+                <li><a class="dropdown-item" href="data_visualizations.php">Visualizations</a></li>
+                </ul>
+              	<!-- end of the dropdown -->
             
     			<button type="button" class="btn btn-warning btn-block" aria-expanded="false" onclick=" relocate_about()">
                 About
@@ -105,7 +114,7 @@
         		<li>Top threats in 2020: </li>
         		<ul>
         			<li>Network scanning</li>
-        			<li>Defaul Password</li>
+        			<li>Default Password</li>
         			<li>Worm</li>
         			<li>Ransomware</li>        			       			
         		</ul>

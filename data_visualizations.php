@@ -100,95 +100,52 @@
     	</div>
 	
 	</nav>
-	
-	<div id="main_content">
-    	<p><h1>Data Summary</h1></p>
-    	
-    	<div class="container">            
-          <table class="table table-bordered">
-            <tbody>
-              <tr>
-                <td rowspan='5'><img id='shodan' src="images\shodan.jpg" width="400" height="400"></td>
-                <td><b>About</b></td>
-                <td>Shodan is a search engine for IoT devices</td>
-              </tr>
-              <tr>
-                <td><b>Advantage</b></td>
-                <td><ul>
-                      <li>Known as 'The search engine for hackers'</li>
-                      <li>Ability find ANY device and report any vulnerabilities</li>
-                      <li>This search engine is also useful to security personnel to help protect networks</li>
-                    </ul>
-                </td>
-              </tr>
-              <tr>
-                <td><b>Data Collected</b></td>
-                <td><ul>
-                      <li>Results related to the IoT</li>
-                      <li>Fields such as IP Address, Port, Location, Organization, City, Protocol, etc.</li>
-                    </ul></td>
-              </tr>
-              <tr>
-                <td><b>Collected Strategy</b></td>
-                <td>Sign up and profile creation on the shodan platform to acquire an API key.
-                Using the API key, created a python script to make search engine queries. Normalization of 
-                query results to add data to database.</td>
-              </tr>
-              <tr>
-                <td><b>Justification</b></td>
-                <td>Using this data, security professionals can monitor devices vulnerable to network threats while gaining
-                an external view of the IoT landscape</td>
-              </tr>
-            </tbody>
-          </table>
-		</div>
-
-		<div class="container">            
-          <table class="table table-bordered">
-            <tbody>
-              <tr>
-                <td rowspan='5'><img id='abuse' src="images\abuse.jpg" width="400" height="400"></td>
-                <td><b>About</b></td>
-                <td>Abuse, developed by Bern University of Applied Sciences (BFH) in Switzerland, 
-                identifies and tracks malware & botnets </td>
-              </tr>
-              <tr>
-                <td><b>Advantage</b></td>
-                <td>Various thread feed offerings<br>
-                	<ul>
-                      <li>Suricata rule set</li>
-                      <li>C & C Servers</li>
-                      <li>Botnet C2 IP Blacklist</li>
-                      <li>Many more</li>
-                    </ul>
-                </td>
-              </tr>
-              <tr>
-                <td><b>Data Collected</b></td>
-                <td>
-                	<ul>
-                      <li>SSL fingerprint</li>
-                      <li>Date last seen</li>
-                      <li>Malware type</li>
-                    </ul></td>
-              </tr>
-              <tr>
-                <td><b>Collected Strategy</b></td>
-                <td>Python Script making HTTP GET request to public URL hosting csv data that is updated every 
-                5 minutes. Parse month, day and year from timestamp column & normalization of data to push to database.</td>
-              </tr>
-              <tr>
-                <td><b>Justification</b></td>
-                <td>Intelligence feed of SSL fingerprints can be used to create actionable items like indicators 
-                of compromise (IOCs)</td>
-              </tr>
-            </tbody>
-          </table>
-		</div>
-		 	
+    
+    <div id="main_content">
+    
+    	<div id="industry_info">
+        	<h1>Visualization - Geospatial Visualization IoT Devices</h1>
+        	<div id="industry_image">
+        		<img src="images/iot_map.png" width="900" height="500">
+        	</div>
+        	<ul>
+        		<li>The use of IoT devices are heavily concentrated in North America, Europe, and South Asia.</li>
+        		<ul>
+        			<li>The above map utilize IP geolocation services utilized with the Shodan IoT data.</li>
+        		</ul>
+        		<br>
+        	</ul>
+        	<br>
+        	
+        	<h1>Visualization - Malware Analysis (Annual Distribution)</h1>
+        	<div id="industry_image">
+        		<img src="images/top_5_malware.png" width="900" height="500">
+        	</div>
+        	<ul>
+        		<li>Async Remote Access Trojan (RAT) C&C is the most frequently seen malware from 2019 - Current</li>
+        		<ul>
+        			<li>This malware is seen DAILY since 2019.</li>
+        		</ul>
+        		<br>
+        	</ul>
+        	<br>
+        	
+        	<h1>Visualization - Bar chart of IoT Protocol</h1>
+        	<div id="industry_image">
+        		<img src="images/protocol_bar.png" width="900" height="500">
+        	</div>
+        	<ul>
+        		<li>Although UDP may be preferred for faster traffic and less network traffic congestion, 
+        		many IoT device users utilize TCP for reliable transmission</li>
+        		<ul>
+        			<li>IP address + protocol (TCP) + port number.</li>
+        		</ul>
+        		<br>
+        	</ul>
+        	<br>
+        		
+        </div> <!-- end of the industry background --> 
     </div>
-	
-</div>
 <script>
     function relocate_home()
     {
@@ -200,10 +157,9 @@
          location.href = "about.php";
     }
 </script>
+
+
 </body>
-
-
-
 
 <footer>
 	<strong>This site is for academic purposes only.</strong> &copy; Steven Green

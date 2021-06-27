@@ -81,6 +81,15 @@
                 <li><a class="dropdown-item" href="data_abuse.php">Abuse.ch data example</a></li>
                 </ul>
               	<!-- end of the dropdown -->
+              	
+              	<button type="button" class="btn btn-warning dropdown-toggle btn-block" data-bs-toggle="dropdown" aria-expanded="false">
+                Analytics
+                </button>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="approaches.php">Approaches</a></li>
+                <li><a class="dropdown-item" href="data_visualizations.php">Visualizations</a></li>
+                </ul>
+              	<!-- end of the dropdown -->
             
     			<button type="button" class="btn btn-warning btn-block" aria-expanded="false" onclick=" relocate_about()">
                 About
@@ -91,7 +100,7 @@
     	</div>
 	
 	</nav>
-    
+
     <div id="main_content">
     
     	<div id="main_info">
@@ -128,7 +137,17 @@
                       Develop scripts for acquisition of data & summarize<br>
                       Update prototype website to display data samples<br>
                 </p>
-                <p class="card-text"><small class="text-muted">Updated 5/21/21</small></p>
+                <p class="card-text"><small class="text-muted">Updated 6/13/21</small></p>
+              </div>
+              <br>
+              <div id="card-body">
+                <h5 class="card-title">Milestone 3</h5>
+                <p class="card-text">
+                      Milestone 2 feedback<br>
+                      Analytical Approaches & Justification<br>
+                      Visualizations<br>
+                </p>
+                <p class="card-text"><small class="text-muted">Updated 6/27/21</small></p>
               </div>
             </div>
 		</div>

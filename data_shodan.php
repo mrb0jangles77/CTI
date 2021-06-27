@@ -38,7 +38,7 @@
 <body>
 <div id="body_container">
 
-	<nav>
+	    <nav>
 		<img id="primary_logo" src="images\primary_logo.png"><b>Internet of Things(IoT) CTI</b>
 		
 		<div class="btn-toolbar" role="toolbar" aria-label="Button group toolbar">
@@ -86,6 +86,15 @@
                 <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="data_shodan.php">Shodan.io data example</a></li>
                 <li><a class="dropdown-item" href="data_abuse.php">Abuse.ch data example</a></li>
+                </ul>
+              	<!-- end of the dropdown -->
+              	
+              	<button type="button" class="btn btn-warning dropdown-toggle btn-block" data-bs-toggle="dropdown" aria-expanded="false">
+                Analytics
+                </button>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="approaches.php">Approaches</a></li>
+                <li><a class="dropdown-item" href="data_visualizations.php">Visualizations</a></li>
                 </ul>
               	<!-- end of the dropdown -->
             

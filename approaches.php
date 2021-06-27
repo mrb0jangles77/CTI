@@ -100,95 +100,92 @@
     	</div>
 	
 	</nav>
-	
-	<div id="main_content">
-    	<p><h1>Data Summary</h1></p>
-    	
-    	<div class="container">            
-          <table class="table table-bordered">
-            <tbody>
-              <tr>
-                <td rowspan='5'><img id='shodan' src="images\shodan.jpg" width="400" height="400"></td>
-                <td><b>About</b></td>
-                <td>Shodan is a search engine for IoT devices</td>
-              </tr>
-              <tr>
-                <td><b>Advantage</b></td>
-                <td><ul>
-                      <li>Known as 'The search engine for hackers'</li>
-                      <li>Ability find ANY device and report any vulnerabilities</li>
-                      <li>This search engine is also useful to security personnel to help protect networks</li>
-                    </ul>
-                </td>
-              </tr>
-              <tr>
-                <td><b>Data Collected</b></td>
-                <td><ul>
-                      <li>Results related to the IoT</li>
-                      <li>Fields such as IP Address, Port, Location, Organization, City, Protocol, etc.</li>
-                    </ul></td>
-              </tr>
-              <tr>
-                <td><b>Collected Strategy</b></td>
-                <td>Sign up and profile creation on the shodan platform to acquire an API key.
-                Using the API key, created a python script to make search engine queries. Normalization of 
-                query results to add data to database.</td>
-              </tr>
-              <tr>
-                <td><b>Justification</b></td>
-                <td>Using this data, security professionals can monitor devices vulnerable to network threats while gaining
-                an external view of the IoT landscape</td>
-              </tr>
-            </tbody>
-          </table>
-		</div>
-
-		<div class="container">            
-          <table class="table table-bordered">
-            <tbody>
-              <tr>
-                <td rowspan='5'><img id='abuse' src="images\abuse.jpg" width="400" height="400"></td>
-                <td><b>About</b></td>
-                <td>Abuse, developed by Bern University of Applied Sciences (BFH) in Switzerland, 
-                identifies and tracks malware & botnets </td>
-              </tr>
-              <tr>
-                <td><b>Advantage</b></td>
-                <td>Various thread feed offerings<br>
-                	<ul>
-                      <li>Suricata rule set</li>
-                      <li>C & C Servers</li>
-                      <li>Botnet C2 IP Blacklist</li>
-                      <li>Many more</li>
-                    </ul>
-                </td>
-              </tr>
-              <tr>
-                <td><b>Data Collected</b></td>
-                <td>
-                	<ul>
-                      <li>SSL fingerprint</li>
-                      <li>Date last seen</li>
-                      <li>Malware type</li>
-                    </ul></td>
-              </tr>
-              <tr>
-                <td><b>Collected Strategy</b></td>
-                <td>Python Script making HTTP GET request to public URL hosting csv data that is updated every 
-                5 minutes. Parse month, day and year from timestamp column & normalization of data to push to database.</td>
-              </tr>
-              <tr>
-                <td><b>Justification</b></td>
-                <td>Intelligence feed of SSL fingerprints can be used to create actionable items like indicators 
-                of compromise (IOCs)</td>
-              </tr>
-            </tbody>
-          </table>
-		</div>
-		 	
-    </div>
-	
+    
+    <div id="main_content">
+    
+    	<div id="intel_buyin">
+        	<h1>Analytical Approaches</h1>
+        	
+        	<p>Performing analytical techniques on our collected data enables the development of relevant & 
+        	timely insights on cyber threat intelligence data sources</p>
+        	
+        	<ul>
+        		<li>The following three analytical approaches were used: </li>
+        		<ul>
+        			<li>Summary Statistics</li>
+        			<li>Malware Analysis</li>
+        			<li>IP Reputation Analysis</li>      			       			
+        		</ul>
+        		<br>
+        		<li>Justification - Summary Statistics: </li>
+        		<ul>
+        			<li>Data Source:</li>
+        			<ul>
+        				<li>Shodan IoT data - IoT internet protocols used</li>
+        			</ul>
+        			<li>Process</li>
+        			<ul>
+        				<li>Analyze Frequency of IoT protocols</li>
+        				<li>Create plot using R</li>
+        			</ul>
+        			<li>Justification</li>
+        			<ul>
+        				<li>There may be a preference of UDP protocol used for IoT devices due to the 
+        				amount of data being transported over the network, therefore speed and using less 
+        				network traffic would be preferred. However, it is beneficial to provide executives 
+        				with a visualization of most utilized protocol.</li>
+        			</ul>
+        		</ul>
+        		<br>
+        		<li>Justification - Malware Analysis</li>
+        		<ul>
+        			<li>Data Source:</li>
+        			<ul>
+        				<li>Abuse SSL Fingerprint - C2 servers for botnets</li>
+        			</ul>
+        			<li>Process</li>
+        			<ul>
+        				<li>Analysis of SSL fingerprint dataset</li>
+        				<ul>
+        					<li>Extract date from each occurrence</li>
+        					<li>Frequency of malware by date</li>
+        					<li>Create plot using R</li>
+        				</ul>
+        			</ul>
+        			<li>Justification</li>
+        			<ul>
+        				<li>Provide visualization for executives to help identify the most frequent 
+        				malware types used to create a botnet with IoT sensors based on date</li>
+        			</ul>
+        		</ul>
+        		<br>
+        		<li>Justification - IP Reputation Analysis</li>
+        		<ul>
+        			<li>Data Source:</li>
+        			<ul>
+        				<li>Shodan IoT data - IP Addresses</li>
+        			</ul>
+        			<li>Process</li>
+        			<ul>
+        				<li>Utilize open source service such as IP-API.com & mygeodata.cloud</li>
+        				<ul>
+        					<li>Geolocation of IP Address</li>
+        					<li>Acquire geospatial visualization</li>
+        				</ul>
+        			</ul>
+        			<li>Justification</li>
+        			<ul>
+        				<li>Provide executive leadership with a geospatial view of malicious IoT devices 
+        				to give an idea of which locations should be blocked from network.</li>
+        			</ul>
+        		</ul>     		
+        	</ul>
+        	<!-- end of diamond modelling -->
+        	
+        </div> <!-- end of the intelligence buy-in --> 
+     </div> <!-- end of the content -->
 </div>
+
 <script>
     function relocate_home()
     {
@@ -200,10 +197,9 @@
          location.href = "about.php";
     }
 </script>
+
+
 </body>
-
-
-
 
 <footer>
 	<strong>This site is for academic purposes only.</strong> &copy; Steven Green
