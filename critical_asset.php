@@ -36,7 +36,7 @@
 		
 		<div class="btn-toolbar" role="toolbar" aria-label="Button group toolbar">
 		
-    		<div class="btn-group" role="group" aria-label="Button group 1">
+    		<div class="btn-group col-md-12 text-center" role="group" aria-label="Button group 1">
             	
             	<button type="button" class="btn btn-warning btn-block" aria-expanded="false" onclick=" relocate_home()">
                 Home
@@ -61,20 +61,22 @@
                 <li><a class="dropdown-item" href="intel_buyin.php">Intelligence buy-in</a></li>
                 </ul>
               	<!-- end of the dropdown -->
-            	
-    		</div>
-    		
-    		<div class="btn-group" role="group" aria-label="Button group 2">
-    			<button type="button" class="btn btn-warning dropdown-toggle btn-block" data-bs-toggle="dropdown" aria-expanded="false">
+              	
+              	<button type="button" class="btn btn-warning dropdown-toggle btn-block" data-bs-toggle="dropdown" aria-expanded="false">
                 Data Summary
                 </button>
                 <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="data_summary.php">Data summary</a></li>
                 </ul>
               	<!-- end of the dropdown -->
-              	
+            	
+    		</div>
+    		
+            <div class="btn-group col-md-12 text-center" role="group" aria-label="Button group 2">   		
+    		
+    			              	
               	<button type="button" class="btn btn-warning dropdown-toggle btn-block" data-bs-toggle="dropdown" aria-expanded="false">
-                Data Examples
+                Data Example
                 </button>
                 <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="data_shodan.php">Shodan.io data example</a></li>
@@ -88,6 +90,15 @@
                 <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="approaches.php">Approaches</a></li>
                 <li><a class="dropdown-item" href="data_visualizations.php">Visualizations</a></li>
+                </ul>
+              	<!-- end of the dropdown -->
+              	
+              	<button type="button" class="btn btn-warning dropdown-toggle btn-block" data-bs-toggle="dropdown" aria-expanded="false">
+                Operational Intelligence
+                </button>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="insights.php">Key Insights Summary</a></li>
+                <li><a class="dropdown-item" href="operational_intel.php">Operational Intelligence</a></li>
                 </ul>
               	<!-- end of the dropdown -->
             

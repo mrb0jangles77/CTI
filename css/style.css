@@ -41,6 +41,7 @@ nav ul {
   list-style: none;
   position: relative;
   width:100%;
+  length:75%;
 }
 
 nav ul li {
@@ -50,8 +51,8 @@ nav ul li {
 }
 
 .btn-toolbar {
-	
-	}
+ 
+}
 
 button {
 	

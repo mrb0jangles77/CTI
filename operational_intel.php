@@ -119,36 +119,29 @@
           <table class="table table-bordered">
             <tbody>
               <tr>
-                <td rowspan='5'><img id='shodan' src="images\shodan.jpg" width="400" height="400"></td>
-                <td><b>About</b></td>
-                <td>Shodan is a search engine for IoT devices</td>
+              	<td rowspan='5'><img id='abuse' src="images\abuse.jpg" width="400" height="400"></td>
+                <td><b>Intelligence Dissemination</b></td>
+                <td><ul>
+                      <li>Disseminate to IoT industry through annual security reports</li>
+                      <li>Disseminate within company through quarterly workshops  & trainings</li>
+                      <li>STIX reports of Indicators to security personnel</li>
+                    </ul></td>
               </tr>
               <tr>
-                <td><b>Advantage</b></td>
+                <td><b>Course of Actions</b></td>
                 <td><ul>
-                      <li>Known as 'The search engine for hackers'</li>
-                      <li>Ability find ANY device and report any vulnerabilities</li>
-                      <li>This search engine is also useful to security personnel to help protect networks</li>
+                      <li>The intelligence generated from the malware analysis can be responded to right away.</li>
+                      <li>Real time tracking of botnet malware -> updating antivirus definitions & firewall</li>
                     </ul>
                 </td>
               </tr>
               <tr>
-                <td><b>Data Collected</b></td>
+                <td><b>Intelligence Informing Next Iteration</b></td>
                 <td><ul>
-                      <li>Results related to the IoT</li>
-                      <li>Fields such as IP Address, Port, Location, Organization, City, Protocol, etc.</li>
+                      <li>Prioritize critical assets such as IoT sensors from C2 botnets</li>
+                      <li>Update IoT sensor diamond model to include the use of C2 malware in 
+                      ramification of breach component</li>
                     </ul></td>
-              </tr>
-              <tr>
-                <td><b>Collected Strategy</b></td>
-                <td>Sign up and profile creation on the shodan platform to acquire an API key.
-                Using the API key, created a python script to make search engine queries. Normalization of 
-                query results to add data to database.</td>
-              </tr>
-              <tr>
-                <td><b>Justification</b></td>
-                <td>Using this data, security professionals can monitor devices vulnerable to network threats while gaining
-                an external view of the IoT landscape</td>
               </tr>
             </tbody>
           </table>
@@ -158,40 +151,28 @@
           <table class="table table-bordered">
             <tbody>
               <tr>
-                <td rowspan='5'><img id='abuse' src="images\abuse.jpg" width="400" height="400"></td>
-                <td><b>About</b></td>
-                <td>Abuse, developed by Bern University of Applied Sciences (BFH) in Switzerland, 
-                identifies and tracks malware & botnets </td>
+                <td rowspan='5'><img id='shodan' src="images\shodan.jpg" width="400" height="400"></td>
+                <td><b>Intelligence Dissemination</b></td>
+                <td><ul>
+                      <li>Disseminate to IoT industry through annual security reports</li>
+                      <li>Disseminate to network security engineers to establish policies around IoT devices</li>
+                    </ul></td>
               </tr>
               <tr>
-                <td><b>Advantage</b></td>
-                <td>Various thread feed offerings<br>
-                	<ul>
-                      <li>Suricata rule set</li>
-                      <li>C & C Servers</li>
-                      <li>Botnet C2 IP Blacklist</li>
-                      <li>Many more</li>
+                <td><b>Course of Actions</b></td>
+                <td><ul>
+                      <li>Intelligence will be used to develop policies in which IoT devices are hardened</li>
+                      <li>Policies directing proper protocols</li>
+                      <li>Policies directing proper ports</li>
                     </ul>
                 </td>
               </tr>
               <tr>
-                <td><b>Data Collected</b></td>
-                <td>
-                	<ul>
-                      <li>SSL fingerprint</li>
-                      <li>Date last seen</li>
-                      <li>Malware type</li>
+                <td><b>Intelligence Informing Next Iteration</b></td>
+                <td><ul>
+                      <li>Update IoT vendor diamond model to include the 
+                      improper hardening of devices as part of the threat component </li>
                     </ul></td>
-              </tr>
-              <tr>
-                <td><b>Collected Strategy</b></td>
-                <td>Python Script making HTTP GET request to public URL hosting csv data that is updated every 
-                5 minutes. Parse month, day and year from timestamp column & normalization of data to push to database.</td>
-              </tr>
-              <tr>
-                <td><b>Justification</b></td>
-                <td>Intelligence feed of SSL fingerprints can be used to create actionable items like indicators 
-                of compromise (IOCs)</td>
               </tr>
             </tbody>
           </table>
